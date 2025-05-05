@@ -4,7 +4,7 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - priceText: {instanceID: 0}
+  - priceText: {fileID: 6620908227635323547, guid: 58029de0e73d34772b53c38d7958224f, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

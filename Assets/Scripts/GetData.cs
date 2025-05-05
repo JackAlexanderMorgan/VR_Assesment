@@ -13,11 +13,17 @@ public class GetData : MonoBehaviour
     //public GameObject[] priceInstances;
     private int counter;
 
-    // Start is called before the first frame update
+    public float priceOfUSDValue;
+    public float priceOfAEDValue;
+    public float priceOfAUDValue;
+    public float priceOfJPYValue;
+    public float priceOfCHFValue;
+    public bool isDataReady = false;
+
     void Start()
     {
         StartCoroutine(getData());
-        //counter = 0;
+        
     }
 
     IEnumerator getData()
@@ -35,8 +41,11 @@ public class GetData : MonoBehaviour
             else
             {
                 string json = request.downloadHandler.text;
+                
+                isDataReady = true;
                 Debug.Log(json);
                 ReadJSON(json);
+                
             }
 
         }
@@ -52,6 +61,12 @@ public class GetData : MonoBehaviour
         string priceOfJPY = obj["conversion_rates"]["JPY"].Value;
         string priceOfAUD = obj["conversion_rates"]["AUD"].Value;
         string priceOfCHF = obj["conversion_rates"]["CHF"].Value;
+
+        priceOfUSDValue = float.Parse(priceOfUSD);
+        priceOfAUDValue = float.Parse(priceOfAUD);
+        priceOfJPYValue = float.Parse(priceOfJPY);
+        priceOfAEDValue = float.Parse(priceOfAED);
+        priceOfCHFValue = float.Parse(priceOfCHF);
 
         var x = 1.6025f;
         float y = 1.578f;
@@ -82,20 +97,12 @@ public class GetData : MonoBehaviour
             else if (i == 4)
             {
                 textComponent.text = priceOfCHF;
+                Debug.Log("priceWritten");
             }
 
             y -= 0.1715f;
         }
     }
-
-
-
-
-    //int aed = obj["conversion_rates"]["AED"];
-
-    //int numbOfCurrencies = obj["conversion_rates"].Count;
-
-
 }
 
 
