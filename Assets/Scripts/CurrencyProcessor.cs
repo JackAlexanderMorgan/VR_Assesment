@@ -114,19 +114,18 @@ public class CurrencyProcessor : MonoBehaviour
     }
     void DestroyPreviousCoins()
     {
-        // Destroy all big coins
+
         foreach (GameObject coin in generatedBigCoins)
         {
             Destroy(coin);
         }
-        generatedBigCoins.Clear(); // Clear the list after destroying coins
+        generatedBigCoins.Clear(); 
 
-        // Destroy all small coins
         foreach (GameObject coin in generatedSmallCoins)
         {
             Destroy(coin);
         }
-        generatedSmallCoins.Clear(); // Clear the list after destroying coins
+        generatedSmallCoins.Clear(); 
     }
 }
 

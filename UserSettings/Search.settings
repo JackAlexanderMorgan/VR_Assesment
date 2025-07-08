@@ -1,7 +1,7 @@
 trackSelection = true
 refreshSearchWindowsInPlayMode = false
 fetchPreview = true
-defaultFlags = 0
+defaultFlags = 264
 keepOpen = false
 queryFolder = "Assets"
 onBoardingDoNotAskAgain = true
@@ -16,6 +16,12 @@ scopes = {
 	"last_search.5A656512" = "ref=\"Assets/Asteroid/Prefabs/Text.prefab\""
 	"OpenInspectorPreview.5A656512" = "0"
 	"currentGroup.5A656512" = null
+	"last_search.8DF93126" = "https://v6.exchangerate-api.com/v6/59a1a4134462dc43e4cee82c/latest/GBP"
+	"OpenInspectorPreview.8DF93126" = "0"
+	"currentGroup.8DF93126" = null
+	"last_search.8DF93128" = "https://v6.exchangerate-api.com/v6/e61187b76325a107fa6e9970/latest/GBP"
+	"OpenInspectorPreview.8DF93128" = "0"
+	"currentGroup.8DF93128" = null
 }
 providers = {
 	find = {
@@ -72,6 +78,9 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"\"https://v6.exchangerate-api.com/v6/e61187b76325a107fa6e9970/latest/GBP\""
+	"dataurl=\"https://v6.exchangerate-api.com/v6/e61187b76325a107fa6e9970/latest/GBP\""
+	"https://v6.exchangerate-api.com/v6/59a1a4134462dc43e4cee82c/latest/GBP"
 ]
 searchItemFavorites = [
 ]

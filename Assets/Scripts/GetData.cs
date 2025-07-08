@@ -4,14 +4,12 @@ using UnityEngine;
 using SimpleJSON;
 using UnityEngine.Networking;
 using TMPro;
-
+using static System.Net.WebRequestMethods;
 public class GetData : MonoBehaviour
 {
 
-    public string DataURL;
+    public string DataURL = "https://v6.exchangerate-api.com/v6/e61187b76325a107fa6e9970/latest/GBP";
     public GameObject priceText;
-    //public GameObject[] priceInstances;
-    private int counter;
 
     public float priceOfUSDValue;
     public float priceOfAEDValue;
@@ -21,7 +19,10 @@ public class GetData : MonoBehaviour
     public bool isDataReady = false;
 
     void Start()
+
     {
+        DataURL = "https://v6.exchangerate-api.com/v6/ed65155d13fe01c3ea3dfbff/latest/GBP";
+
         StartCoroutine(getData());
         
     }
@@ -29,7 +30,8 @@ public class GetData : MonoBehaviour
     IEnumerator getData()
     {
         using (UnityWebRequest request = UnityWebRequest.Get(DataURL)) 
-        { 
+        {
+            Debug.Log("Using DataURL: " + DataURL);
 
             yield return request.SendWebRequest();
 
@@ -61,6 +63,12 @@ public class GetData : MonoBehaviour
         string priceOfJPY = obj["conversion_rates"]["JPY"].Value;
         string priceOfAUD = obj["conversion_rates"]["AUD"].Value;
         string priceOfCHF = obj["conversion_rates"]["CHF"].Value;
+
+        Debug.Log("priceOfAED: " + priceOfAED);
+        Debug.Log("priceOfUSD: " + priceOfUSD);
+        Debug.Log("priceOfJPY: " + priceOfJPY);
+        Debug.Log("priceOfAUD: " + priceOfAUD);
+        Debug.Log("priceOfCHF: " + priceOfCHF);
 
         priceOfUSDValue = float.Parse(priceOfUSD);
         priceOfAUDValue = float.Parse(priceOfAUD);

@@ -1,0 +1,5 @@
+C:/Users/Mrswa/Desktop/VR/VR_Assesment_FINAL/.utmp/RelWithDebInfo/4q2f3h24/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/Mrswa/Desktop/VR/VR_Assesment_FINAL/.utmp/RelWithDebInfo/4q2f3h24/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/Users/Mrswa/Desktop/VR/VR_Assesment_FINAL/.utmp/RelWithDebInfo/4q2f3h24/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/Users/Mrswa/Desktop/VR/VR_Assesment_FINAL/.utmp/RelWithDebInfo/4q2f3h24/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Users/Mrswa/Desktop/VR/VR_Assesment_FINAL/.utmp/RelWithDebInfo/4q2f3h24/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
